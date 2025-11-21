@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6fff9;
+  margin: 0;
+  padding: 0;
+      text-align: center;
+    /* Asegura que la página principal tenga al menos la altura de la ventana */
+    min-height: 100vh; 
+    display: flex; /* Habilita Flexbox en el body */
+    flex-direction: column; /* Apila los elementos (Navbar, Section, Footer) verticalmente */
+}
+
+h2 {
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-link {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+    user-select: none;
+    text-align: center;
+}
+
+.contact-link:hover {
+  color: #145214;
+  text-decoration: underline;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el ratón */
+}
+
+.container.py-5.text-center {
+    /* Ocupa el espacio restante entre el Navbar y el Footer */
+    flex-grow: 1; 
+    
+    /* Habilita Flexbox dentro del contenedor para centrar su contenido */
+    display: flex;
+    
+    /* Alinea el contenido (h2, p) al centro horizontal */
+    justify-content: center; 
+    
+    /* Alinea el contenido (h2, p) al centro vertical */
+    align-items: center; 
+    
+    /* Apila el contenido verticalmente (por defecto es fila, lo cambiamos a columna) */
+    flex-direction: column;
+}
+
+/* 3. Estilos Adicionales (Opcional, pero bueno tenerlos) */
+.contact-link {
+    text-decoration: none; 
+    font-weight: bold;
+    color: inherit; 
+}
+
+.contact-link:hover {
+    text-decoration: underline; 
+}
