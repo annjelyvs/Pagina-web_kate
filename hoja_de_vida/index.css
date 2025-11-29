@@ -1,200 +1,135 @@
-/* Variables para colores del tema oscuro */
-:root {
-    --dark-bg-color: #1a1a1a;   
-    --sidebar-bg-color: #2c2c2c; 
-    --main-content-bg-color: #1a1a1a; 
-    --text-light: #f0f0f0;      
-    --text-medium: #cccccc;     
-    --accent-line: #00bcd4;     
-    --section-divider: #444444; 
-}
+/* ============================
+   GENERAL
+=============================== */
 
-/* Estilos Globales y Reset Básico */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    line-height: 1.6;
+    background-color: #e9f0f6; /* Fondo claro como una hoja centrada */
     margin: 0;
-    padding: 0;
-    background-color: var(--dark-bg-color); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: var(--text-light);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Contenedor principal del CV */
-.cv-container-dark {
-    width: 210mm; 
-    min-height: 297mm; 
-    display: flex;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    background-color: var(--dark-bg-color);
+/* Contenedor principal centrado */
+.cv-card {
+    max-width: 1100px;
+    width: 100%;
+    background-color: #121212; /* Mantiene tu diseño oscuro */
+    border-radius: 15px;
     overflow: hidden;
 }
 
-/* --- Columna Lateral (Sidebar) --- */
-.sidebar-dark {
-    width: 35%;
-    background-color: var(--sidebar-bg-color);
-    padding: 30px 0;
-    box-sizing: border-box;
+/* Estructura original */
+.cv-container-dark {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    border-right: 1px solid var(--section-divider);
+    flex-direction: row;
 }
 
-/* Contenedor de la Foto de Perfil */
+/* ============================
+   SIDEBAR DARK
+=============================== */
+
+.sidebar-dark {
+    width: 30%;
+    background-color: #1b1b1b;
+    padding: 30px;
+    color: #fff;
+}
+
 .profile-photo-container-dark {
-    margin-bottom: 30px;
-    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .profile-photo-dark {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
-    border: 3px solid var(--accent-line); 
+    border-radius: 50%;
+    border: 4px solid #00bcd4;
 }
 
-/* Título de sección en la barra lateral */
+/* TITULOS DEL LADO IZQUIERDO */
 .section-title-dark {
-    font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    color: var(--accent-line);
-    letter-spacing: 1px;
-    text-align: center;
-    position: relative;
-}
-
-.section-title-dark::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 2px;
-    background-color: var(--accent-line);
-}
-
-/* Estilo general de sección en barra lateral */
-.section-dark {
-    width: 80%; 
-    margin-bottom: 30px; /* Separación estándar entre secciones */
-    padding-bottom: 20px;
-    border-bottom: 1px dashed var(--section-divider); 
-    text-align: left;
-}
-
-/* IMPORTANTE: La última sección no lleva borde inferior ni margen extra */
-.references-dark {
-    border-bottom: none; 
-    margin-bottom: 0; 
-    padding-bottom: 0;
-}
-
-.contact-dark p {
-    font-size: 0.9em;
-    margin: 8px 0;
-    padding-left: 10px; 
-}
-
-.references-dark p {
-    font-size: 0.9em;
-    margin: 5px 0;
-    padding-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color: #00bcd4;
 }
 
 .ref-detail {
-    font-size: 0.85em;
-    color: var(--text-medium);
-    margin-left: 10px; 
+    color: #bbbbbb;
+    font-size: 0.9rem;
 }
 
+/* ============================
+   MAIN CONTENT DARK
+=============================== */
 
-/* --- Columna Principal (Main Content) --- */
 .main-content-dark {
-    width: 65%;
+    width: 70%;
     padding: 40px;
-    box-sizing: border-box;
-    color: var(--text-light);
+    background-color: #121212;
+    color: #e8e8e8;
 }
 
-/* Cabecera Principal */
-.header-main-dark {
-    margin-bottom: 40px;
-    border-bottom: 2px solid var(--accent-line); 
-    padding-bottom: 15px;
-}
-
-.name-dark {
-    font-size: 2.5em;
-    font-weight: bold;
+/* Títulos principales del contenido */
+.header-main-dark h1 {
+    font-size: 2.3rem;
     margin: 0;
-    text-transform: uppercase;
-    color: var(--accent-line);
-    letter-spacing: 2px;
 }
 
 .title-dark {
-    font-size: 1.2em;
-    margin: 5px 0 0;
-    color: var(--text-medium);
-    font-weight: normal;
-    text-transform: uppercase;
+    color: #00bcd4;
+    margin-top: 5px;
 }
 
-/* Título de sección en el contenido principal */
+/* Secciones */
 .section-title-main-dark {
-    font-size: 1.2em;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    color: var(--text-light);
-    border-bottom: 1px solid var(--section-divider);
-    padding-bottom: 5px;
-    letter-spacing: 0.5px;
-}
-
-/* Estilo general de sección en contenido principal */
-.section-dark {
-    margin-bottom: 30px;
-}
-
-.about-dark p, .education-dark p, .courses-dark p {
-    font-size: 0.95em;
-    color: var(--text-medium);
+    color: #00bcd4;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
-/* Subencabezados de Formación/Cursos */
+/* Subtítulos */
 .subsection-heading-dark {
-    font-size: 1em;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-top: 15px;
-    margin-bottom: 5px;
-    color: var(--accent-line);
 }
 
-/* Habilidades Grid */
+/* ============================
+   HABILIDADES
+=============================== */
+
 .skills-grid-dark {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px;
-    font-size: 0.95em;
-    color: var(--text-medium);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
 .skills-grid-dark span {
-    background-color: var(--sidebar-bg-color);
+    background-color: #00bcd4;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 6px;
+    display: inline-block;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #000;
+    font-weight: bold;
+}
+
+/* ============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+    .cv-container-dark {
+        flex-direction: column;
+    }
+
+    .sidebar-dark, 
+    .main-content-dark {
+        width: 100%;
+    }
 }

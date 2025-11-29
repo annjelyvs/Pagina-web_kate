@@ -3,73 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de Vida - Alfredo Torres (Final)</title>
+    <title>Hoja de Vida - Annjely Vélez Solis</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="cv-container-dark">
-        <div class="sidebar-dark">
-            <div class="profile-photo-container-dark">
-                <img src="yo.jpg" alt="Foto de Perfil de Annjely Velez" class="profile-photo-dark">
-            </div>
 
-            <div class="section-dark contact-dark">
-                <div class="section-title-dark">CONTACTO</div>
-                <p>(316) 212-3456</p>
-                <p>annjelyvs@gmail.com</p>
-                <p>Identificación: 1114244558</p>
-                <p>Calle 34 # 23-46</p>
-            </div>
-
-            <div class="section-dark references-dark">
-                <div class="section-title-dark">REFERENCIAS PERSONALES</div>
-                <p>Mayron Salazar</p>
-                <p class="ref-detail">Ex-jefe</p>
-                <p class="ref-detail">(316) 212-3456 </p>
-                <p>Khaterine Giraldo</p>
-                <p>instructora SENA</p>
-                <p class="ref-detail">(316) 234-5768 </p>
-            </div>
-            
-            </div>
+    <!-- Bootstrap centrándolo -->
+    <div class="container d-flex justify-content-center py-5">
         
-        <div class="main-content-dark">
-            <div class="header-main-dark">
-                <h1 class="name-dark">Annjely velez Solis</h1>
-                <h2 class="title-dark">PROGRAMADORA EN SOFTWARE</h2>
-            </div>
+        <!-- Tarjeta centrada -->
+        <div class="cv-container-dark shadow-lg rounded-4 overflow-hidden" style="max-width:1100px; width:100%;">
 
-            <div class="section-dark about-dark">
-                <div class="section-title-main-dark">SOBRE MÍ</div>
-                <p>Soy una Programadora de Software con nueve meses de experiencia, especializada en python. Me apasiona transformar ideas complejas en soluciones eficientes y escalables. Destaco por mi habilidad para  el pensamiento analítico y mi compromiso con las buenas prácticas de código. Actualmente busco un rol donde pueda aplicar mis conocimientos en aplicaciones móviles y contribuir al éxito de un equipo innovador.</p>
-            </div>
+            <div class="row g-0">
 
-            <div class="section-dark education-dark">
-                <div class="section-title-main-dark">FORMACIÓN</div>
-                <h3 class="subsection-heading-dark">2024 Graduada de ingenieria </h3>
-                <p>Universidad Del santiado de cali</p>
-            </div>
-            
-            <div class="section-dark courses-dark">
-                <div class="section-title-main-dark">CURSOS</div>
-                <h3 class="subsection-heading-dark">Certificación en Programacion orientada a objetos  </h3>
-                <p>Organizar el código alrededor de objetos y no solo alrededor de funciones y lógica.</p>
-                <h3 class="subsection-heading-dark">Certificado en python</h3>
-                <p>Expandir conocimiento sobre los temas basicos.</p>
-            </div>
+                <!-- Sidebar -->
+                <div class="col-12 col-md-4 sidebar-dark">
+                    <div class="profile-photo-container-dark">
+                        <img src="yo.jpg" alt="Foto de Perfil de Annjely Velez" class="profile-photo-dark">
+                    </div>
 
-            <div class="section-dark skills-dark">
-                <div class="section-title-main-dark">HABILIDADES</div>
-                <div class="skills-grid-dark">
-                    <span>Liderazgo</span>
-                    <span>Gestión del tiempo</span>
-                    <span>Comunicación Efectiva</span>
-                    <span>Trabajo en equipo</span>
-                    <span>Toma de decisiones</span>
-                    <span>Pensamiento estratégico</span>
+                    <div class="section-dark contact-dark">
+                        <div class="section-title-dark">CONTACTO</div>
+                        <p>(316) 212-3456</p>
+                        <p>annjelyvs@gmail.com</p>
+                        <p>Identificación: 1114244558</p>
+                        <p>Calle 34 # 23-46</p>
+                    </div>
+
+                    <div class="section-dark references-dark">
+                        <div class="section-title-dark">REFERENCIAS PERSONALES</div>
+                        <p>Mayron Salazar</p>
+                        <p class="ref-detail">Instructor SENA</p>
+                        <p class="ref-detail">(316) 212-3456 </p>
+                        <p>Khaterine Giraldo</p>
+                        <p>Instructora SENA</p>
+                        <p class="ref-detail">(316) 234-5768 </p>
+                    </div>
                 </div>
+
+                <!-- Contenido principal -->
+                <div class="col-12 col-md-8 main-content-dark">
+                    <div class="header-main-dark">
+                        <h1 class="name-dark">Annjely Vélez Solis</h1>
+                        <h2 class="title-dark">PROGRAMADORA EN SOFTWARE</h2>
+                    </div>
+
+                    <div class="section-dark about-dark">
+                        <div class="section-title-main-dark">SOBRE MÍ</div>
+                        <p>Soy una Programadora de Software con siete meses de experiencia, especializada en python. Me apasiona transformar ideas complejas en soluciones eficientes y escalables. Destaco por mi habilidad para el pensamiento analítico y mi compromiso con las buenas prácticas de código. Actualmente busco un rol donde pueda aplicar mis conocimientos en aplicaciones móviles y contribuir al éxito de un equipo innovador.</p>
+                    </div>
+
+                    <div class="section-dark education-dark">
+                        <div class="section-title-main-dark">FORMACIÓN</div>
+                        <h3 class="subsection-heading-dark">Actualmente cursando un Técnico en Programación de Software</h3>
+                        <p>SENA</p>
+                    </div>
+
+                    <div class="section-dark courses-dark">
+                        <div class="section-title-main-dark">CURSOS</div>
+                        <h3 class="subsection-heading-dark">Certificación en Programación Orientada a Objetos</h3>
+                        <p>Organizar el código alrededor de objetos y no solo alrededor de funciones y lógica.</p>
+
+                        <h3 class="subsection-heading-dark">Certificado en Python</h3>
+                        <p>Expandir conocimiento sobre los temas básicos.</p>
+                    </div>
+
+                    <div class="section-dark skills-dark">
+                        <div class="section-title-main-dark">HABILIDADES</div>
+                        <div class="skills-grid-dark">
+                            <span>Liderazgo</span>
+                            <span>Gestión del tiempo</span>
+                            <span>Comunicación Efectiva</span>
+                            <span>Trabajo en equipo</span>
+                            <span>Toma de decisiones</span>
+                            <span>Pensamiento estratégico</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </div>
+
 </body>
 </html>
